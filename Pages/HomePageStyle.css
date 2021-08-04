@@ -11,6 +11,23 @@ body {
   color: black;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -62,4 +79,116 @@ body {
 .accountActions a:hover {
   background-color: #0079d3;
   color: white;
+}
+
+#MainSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}
+
+#FeedFilterbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  margin-top: 10em;
+  width: 70%;
+  height: 3em;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+#FeedFilterbar button {
+  font-size: 17px;
+  border: 1px solid #0079d3;
+  padding: 0.5em 1.5em;
+  color: white;
+  border-radius: 2em;
+  font-size: 15px;
+  text-align: center;
+  background: #0079d3;
+  width: 9em;
+  height: 2.5em;
+}
+
+#feed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 73%;
+  margin-top: 2em;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  padding: 1em;
+  height: 25em;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
+.ratingsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 1em;
+  border-right: 1px black solid;
+  padding-right: 9px;
+}
+
+.ratingsContainer a {
+  border-top: 2px #0079d3 solid;
+  border-bottom: 2px #0079d3 solid;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.ratingsContainer a:hover {
+  color: green;
+  font-size: 16px;
+}
+
+.ratingsContainer p {
+  margin: 1em 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.metaData {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.postCommunityName {
+  font-weight: 600;
+  font-size: 17px;
+  margin-right: 1em;
+}
+
+.postText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.postText p {
+  font-size: 21px;
 }
