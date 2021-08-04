@@ -1,12 +1,56 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>PyReddit</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'reddit/styles.css' %}">
-</head>
-<body>
-	<h1>You are now on the home page of PyReddit</h1>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>PyReddit</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'reddit/styles.css' %}" />
+  </head>
+  <body>
+    <div id="root">
+      <div id="Navigationbar">
+        <h1 class="logo">PyReddit.com</h1>
+        <input type="text" name="searchbar" id="searchbar" placeholder="Search Reddit" />
+        <div class="accountActions">
+          <a>Log In</a>
+          <a>Sign Up</a>
+        </div>
+      </div>
+      <div id="MainSection">
+        <div id="FeedFilterbar">
+          <button>Hot</button>
+          <button>Top Liked</button>
+          <button>Most Recent</button>
+          <button>Create Post</button>
+        </div>
+        <div id="feed">
+          <div class="post">
+            <div class="ratingsContainer">
+              <a href="">Up Vote</a>
+              <p>1.1k</p>
+              <a href="">Down Vote</a>
+            </div>
+            <div class="body">
+              <div class="metaData">
+                <p class="postCommunityName">r/CryptoCyrrency</p>
+                <p>Posted by u/MeatBoyed 6 hours ago</p>
+              </div>
+              <h1 class="title">Today, I finally paid off last of my debts!</h1>
+              <div class="postText">
+                <p class="postText">
+                  Moons have changed this sub. For the better or the worse, that is up to discussion. I want to talk about
+                  the flaws of moons. Their psychological effect. Every I’ve seen in new has had 40+ comments in 30 minutes,
+                  but all the posts I make rarely have 15+ upvotes. Not upvoting a post makes almost zero effect, in fact in
+                  a post I’d seen before analysing karma and moons, not upvoting 1000 posts will only increase the number f
+                  moons you receive 0.17% more moons, that’s 100.17 moons instead of 100. But people don’t care that they
+                  barely change anything, they are greedy, and moons have magnified these issues 1000 fold. Edit: this post
+                  has been live 3 minutes. It already has 11 comments but 1 upvote. This just further proves my statement
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
