@@ -13,6 +13,7 @@
         <input type="text" name="searchbar" id="searchbar" placeholder="Search Reddit" />
         <div class="accountActions">
           <a>Log In</a>
+          {{ request.user }}
           <a>Sign Up</a>
         </div>
       </div>
@@ -24,6 +25,7 @@
           <button>Create Post</button>
         </div>
         <div id="feed">
+          {{ Posts }}
           <div class="post">
             <div class="ratingsContainer">
               <a href="">Up Vote</a>

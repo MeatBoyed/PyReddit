@@ -1,6 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Post
 
 # Create your views here.
 def homePage(request):
-	return render(request, "reddit/homePage.html")
+	context = {
+		"Posts": Post.objects.all()
+	}
+	return render(request, "reddit/homePage.html", context=context)
