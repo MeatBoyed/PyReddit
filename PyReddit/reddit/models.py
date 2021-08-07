@@ -2,7 +2,6 @@ from time import time
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
-from django.contrib.auth import get_user
 
 class Post(models.Model):
 	Upvotes = models.IntegerField()
