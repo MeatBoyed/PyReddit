@@ -213,7 +213,8 @@ button:hover {
   margin-top: 0;
 }
 
-.inputField {
+.inputField,
+input {
   display: block;
   width: 100%;
   box-sizing: border-box;
