@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from reddit import views
+from reddit.views import homePage
+from users.views import registerPage, loginPage
 
 urlpatterns = [
-    path("", views.homePage),
+    path("", homePage, name="homePage"),
+    path("register/", registerPage, name="user-register"),
+    path("login/", loginPage, name="user-login"),
     path('admin/', admin.site.urls),
 ]

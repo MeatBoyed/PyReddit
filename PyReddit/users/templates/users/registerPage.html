@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>PyReddit / {{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'reddit/styles.css' %}" />
+  </head>
+  <body>
+    <div id="root">
+      <div id="Navigationbar">
+        <h1 class="logo">PyReddit.com</h1>
+        <input type="text" name="searchbar" id="searchbar" placeholder="Search Reddit" />
+        <div class="accountActions">
+          {% if request.user.is_authenticated %}
+          <a href="">Welcome Back {{ request.user}}</a>
+          {% else %}
+          <a href="">Login</a>
+          <a href="">Sign Up</a>
+          {% endif %}
+        </div>
+      </div>
+      <div id="MainSection">
+        <div id="RegisterContainer">
+          <form method="post" class="form">
+            {% csrf_token %}
+            <h1>Create an Account</h1>
+            <input type="text" name="username" id="username" placeholder="Username" class="inputField" />
+            <input type="text" name="email" id="email" placeholder="Email" class="inputField" />
+            <input type="text" name="password" id="password1" placeholder="Password" class="inputField" />
+            <input type="text" name="password" id="password2" placeholder="Confirm Password" class="inputField" />
+            <button type="submit" class="submitButton">Create Account</button>
+          </form>
+          <p class="alreadyText">Already have an account? <a href="" class="loginBtn">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
