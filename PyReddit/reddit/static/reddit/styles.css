@@ -284,3 +284,46 @@ input {
 #LogoutPage a {
   color: #0079d3;
 }
+
+/* Profile Page */
+#ProfilePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: white;
+  width: 75%;
+  margin-top: 5em;
+  padding: 0.5em;
+}
+
+.profilePhoto  {
+  width: 7em;
+  border-radius: 17em;
+  height: 7em;
+  margin-left: 1em;
+}
+
+.profileData {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+.username {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.metaUsername a {
+  color: #0079d3;
+}

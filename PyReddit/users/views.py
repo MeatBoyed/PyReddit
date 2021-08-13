@@ -22,3 +22,8 @@ def registerPage(request):
 	}
 	
 	return render(request, "users/registerPage.html", context)
+
+
+def profilePage(request):
+
+	return render(request, "users/profilePage.html")
