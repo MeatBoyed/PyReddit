@@ -8,7 +8,7 @@
             {{ form.username }} {{ form.email }} {{ form.password1}} {{ form.password2}} {{ form.errors }}
             <button type="submit" class="submitButton">Create Account</button>
           </form>
-          <p class="alreadyText">Already have an account? <a href="" class="loginBtn">Login</a></p>
+          <p class="alreadyText">Already have an account? <a href="{% url 'user-login' %}" class="loginBtn">Login</a></p>
         </div>
 
     <script>

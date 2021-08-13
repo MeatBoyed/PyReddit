@@ -28,6 +28,13 @@ button:hover {
   cursor: pointer;
 }
 
+/* Helper Classes */
+.successMessage {
+  margin-top: 2em;
+  font-size: 16px;
+  color: green;
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -202,7 +209,6 @@ button:hover {
   margin: 6em 0;
   border: 4px solid #0079d3;
   border-radius: 1em;
-  height: 100vh;
 }
 
 .form {
@@ -264,4 +270,17 @@ input {
 .loginBtn {
   color: #0079d3;
   text-decoration: underline;
+}
+
+/* Logout Page */
+#LogoutPage {
+  height: 100vh;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#LogoutPage a {
+  color: #0079d3;
 }

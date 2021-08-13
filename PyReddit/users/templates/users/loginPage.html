@@ -2,14 +2,20 @@
 {% load crispy_forms_tags %}
 {% block content %}
   
+
         <div id="RegisterContainer">
-          <form method="post" class="form">
-            {% csrf_token %}
-            <h1>Log In</h1>
+         {% if messages %}
+          {% for message in messages %}
+            <p class="successMessage">{{ message }}</p>
+          {% endfor %}
+        {% endif %} 
+        <form method="post" class="form">
+          {% csrf_token %}
+          <h1>Log In</h1>
             {{ form.username }} {{ form.password }}
             <button type="submit" class="submitButton">Create Account</button>
           </form>
-          <p class="alreadyText">Already have an account? <a href="" class="loginBtn">Login</a></p>
+          <p class="alreadyText">Don't have an account? <a href="{% url 'user-register' %}" class="loginBtn">Create Account</a></p>
         </div>
       </div>
 
