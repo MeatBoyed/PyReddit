@@ -22,6 +22,3 @@ def registerPage(request):
 	}
 	
 	return render(request, "users/registerPage.html", context)
-
-def loginPage(request):
-	return render(request, "users/loginPage.html")
