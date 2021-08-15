@@ -9,7 +9,7 @@
   <body>
     <div id="root">
       <div id="Navigationbar">
-        <h1 class="logo">PyReddit.com</h1>
+        <a href="{% url 'homePage' %}" class="logo">PyReddit.com</a>
         <input type="text" name="searchbar" id="searchbar" placeholder="Search Reddit" />
         <div class="accountActions">
           {% if request.user.is_authenticated %}

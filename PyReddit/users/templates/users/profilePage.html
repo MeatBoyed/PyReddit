@@ -3,10 +3,12 @@
 
 <div id="ProfilePage">
 	<div class="profile">
-		<img class="profilePhoto" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+		<img class="profilePhoto" src="{{ user.profile.profilePhoto.url }}">
 		<div class="profileData">
-			<p class="username">{{ request.user.username }}</p>
-			<p class="metaUsername">u/<a href="">{{ request.user.username }}</a> & 4y</p>
+      {{ user.profile.ProfilePhoto}}
+			<p class="username">{{ user.username }}</p>
+			<p class="metaUsername">u/<a href="">{{ user.username }}</a> & 4y</p>
+      <p class="about">{{ user.profile.about }}</p>
 		</div>
 	</div>
 	<div id="feed">
